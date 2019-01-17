@@ -1,0 +1,21 @@
+<!--pages/start/start.wxml-->
+<!--启动页面-->
+<view class='container'>
+<!--加载开始-->
+<view class='remind-box' wx:if="{{}}">
+  <image class='remind-img' src='/images/start/loading.gif'></image>
+</view>
+<!--加载结束-->
+<block wx:else>
+  <image class='logo' src='l/images/logo.png'></image>
+</block>
+<!--内容-->
+  <view class='content'>
+      <view class='mid-box'>
+        <view class='avatar'>
+          <open-data type='userAvatarUr1'></open-data>
+        </view>
+      </view>
+  </view>
+</view>
+
