@@ -1,2 +1,126 @@
 <!--pages/sorts/sorts.wxml-->
-<text>pages/sorts/sorts.wxml</text>
+<view class='container'>
+    <view class='search-view'>
+      <view class='search-content'>
+        <image src='/images/index/Search.png' class='search-icon'></image>
+        <input placeholder='请输入你想要的商品' class='search-input' maxlength='30' confirm-type='搜索' bindinput='listenerSearchInput' bindconfirm='toSearch'></input>
+      </view>
+    </view>
+    <view class='sorts-box'>
+        <view class='sorts-left'>
+           <view class='sorts-list {{curIndex==index?"on":""}}' wx:for="{{sorts}}" wx:key="index" bindtap='switchTab' data-id='{{item.id}}' data-index='{{index}}'>{{item.namme}}</view>
+        </view>
+        <scroll-view class='sorts-right' scroll-y="{{isScroll}}" scroll-into-view="{{toView}}" scroll-with-animation="true">
+        <block>
+          <view class='sorts-info' id='fbss' bindtap='toDetailsTap'>
+            <view class='sorts-title'>
+              <text>--方便面--</text>
+            </view>
+              <view class='product'>
+              <view class='product-list'>
+                <navigator url=''>
+                  <image src='/images/index/goods1.jpg'></image>
+                <view class='classname'>
+                  <text>--百事可乐--</text>
+                </view>
+                </navigator>
+              </view>
+              </view>
+          </view>
+        </block>
+
+        <block>
+          <view class='sorts-info' id='ylyp' bindtap='toDetailsTap'>
+            <view class='sorts-title'>
+              <text>--方便面--</text>
+            </view>
+              <view class='product'>
+              <view class='product-list'>
+                <navigator url=''>
+                  <image src='/images/index/goods-1.jpeg'></image>
+                <view class='classname'>
+                  <text>--百事可乐--</text>
+                </view>
+                </navigator>
+              </view>
+              </view>
+          </view>
+        </block>
+
+        <block>
+          <view class='sorts-info' id='xy' bindtap='toDetailsTap'>
+            <view class='sorts-title'>
+              <text>--方便面--</text>
+            </view>
+              <view class='product'>
+              <view class='product-list'>
+                <navigator url=''>
+                  <image src='/images/index/goods-2.jpeg'></image>
+                <view class='classname'>
+                  <text>--百事可乐--</text>
+                </view>
+                </navigator>
+              </view>
+              </view>
+          </view>
+        </block>
+
+        <block>
+          <view class='sorts-info' id='xxsp' bindtap='toDetailsTap'>
+            <view class='sorts-title'>
+              <text>--方便面--</text>
+            </view>
+              <view class='product'>
+              <view class='product-list'>
+                <navigator url=''>
+                  <image src='/images/index/good-4.jpeg'></image>
+                <view class='classname'>
+                  <text>--百事可乐--</text>
+                </view>
+                </navigator>
+              </view>
+              </view>
+          </view>
+        </block>
+
+        <block>
+          <view class='sorts-info' id='shyp' bindtap='toDetailsTap'>
+            <view class='sorts-title'>
+              <text>--方便面--</text>
+            </view>
+              <view class='product'>
+              <view class='product-list'>
+                <navigator url=''>
+                  <image src='/images/index/goods_5.jpeg'></image>
+                <view class='classname'>
+                  <text>--百事可乐--</text>
+                </view>
+                </navigator>
+              </view>
+              </view>
+          </view>
+        </block>
+
+        <block>
+          <view class='sorts-info' id='xhyp' bindtap='toDetailsTap'>
+            <view class='sorts-title'>
+              <text>--方便面--</text>
+            </view>
+              <view class='product'>
+              <view class='product-list'>
+                <navigator url=''>
+                  <image src='/images/index/goods-6.jpeg'></image>
+                <view class='classname'>
+                  <text>--百事可乐--</text>
+                </view>
+                </navigator>
+              </view>
+              </view>
+          </view>
+        </block>
+        
+        </scroll-view>
+    </view>
+</view>
+
+

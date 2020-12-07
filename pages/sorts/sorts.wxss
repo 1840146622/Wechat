@@ -1,1 +1,107 @@
 /* pages/sorts/sorts.wxss */
+page{
+  height: 100%;
+}
+.container{
+  background-color: #fff;
+  min-height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.searchv-view{
+  width: 100%;
+  height: 90rpx;
+  border-bottom: 1rpc #999 solid;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+  .search-content{
+    background-color: #f2f2f2;
+    width:660rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rpx;
+    padding-left: 10rpx;
+    padding-bottom: auto;
+    height: 60rpx;
+    margin: 10rpx auto;
+    border-radius: 60rpx;
+  }
+  .search-icon{
+    width: 32rpx;
+    height: 30rpx;
+    margin-right: 20rpx;
+
+  }
+  .search-input{
+    width: 500rpx;
+    font-size: 28rpx;
+  }
+  .sorts-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .sorts-left{
+    width: 160rpx;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+  }
+  .sorts-list{
+    height: 90rpx;
+    line-height: 90rpx;
+    border-left: 5rpx solid #f4f4f4;
+    border-top: 1rpx solid #e9e9e9;
+    border-right: 1rpx solid #e9e9e9;
+    border-bottom: 1rpx solid #e9e9e9;
+    background-color: #f4f4f4;
+    font-size: 28rpx;
+  }
+  .sorts-list.on{
+    color: #ff6600;
+    border-left: 5rpx solid #ff6600;
+    background-color: #fff;
+  }
+  .sorts-right{
+    width: 600rpx;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .sorts-info{
+    height: 100%;
+    padding: 20rpx 40rpx;
+    box-sizing: border-box;
+  }
+  .sorts-title{
+    position: relative;
+    height: 30rpx;
+    line-height: 30rpx;
+    padding: 5rpx 0 30rpx;
+    text-align: center;
+    color: #ff6600;
+   font-size: 20rpx;
+   font-weight: bold;
+  }
+  .product-list{
+      display: inline-block;
+      width: 160rpx;
+      height: 160rpx;
+      text-align: center;
+      margin: 0 20rpx 20rpx 0;
+      font-size: 24rpx;
+      background-color: #999;
+  }
+   .product-list image{
+      width: 160rpx;
+      height: 160rpx;
+   }
+  

@@ -1,13 +1,174 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<view class='container'>
+      <view class='swiper-container'>
+        <swiper class='swiper-box' indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' circular='{{circular}}' duration='{{duration}}'>
+        <!--循环图片-->
+          <block wx:for="{{imgUrls}}" wx:key="item">
+            <swiper-item>
+            <image src='{{item}}' class='slide-image'></image>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+      <view class='search-view'>
+          <view class='search-content'>
+            <image src='/images/index/Search.png' class='search-icon'></image>
+            <!--输入框-->
+            <input placeholder='请输入你想要的商品' maxlength='30' class='search-input' bindtap='toSearch'></input>
+          </view>
+      </view>
+      <view class='notice'>
+          <view class='notice-item'>公告：</view>
+          <swiper class='notice-swiper' vertical='true' autoplay='true' circular='true' interval='3000'>
+            <navigator url=''>
+              <swiper-item>
+                <view class='notice-itemr'>这是一条通告</view>
+              </swiper-item>
+            </navigator>
+            <navigator url=''>
+              <swiper-item>
+                <view class='notice-itemr'>优惠多多！！</view>
+              </swiper-item>
+            </navigator>
+            <navigator url=''>
+              <swiper-item>
+                <view class='notice-itemr'>其余消息！！</view>
+              </swiper-item>
+            </navigator>
+          </swiper>
+    </view>
+    <view class='advertisement'>
+        <navigator url=''>
+          <image src='/images/index/adv1.jpg' class='adver-img'></image>
+        </navigator>
+    </view>
+    <view class='goods-title'>
+        <text>-火爆热销!-</text>
+    </view>
+
+    <view class='goods-container'>
+        <view class='goods-box' bindtap='toDetailsTap'>
+            <view class='imgbox'>
+              <image src='/images/index/goods1.jpg'></image>
+            </view>
+            <view class='goodsBox-title'>商品名称[500ml]</view>
+            <view class='goods-bottom'>
+                <view class='price-box'>
+                      <view class='etime-goods-price'>
+                      藤友价：
+                      <text>$400+</text>
+                      <text>E5000</text>
+                      </view>
+                      <view class='normal-goods-price'>
+                      实际价格：
+                      <text>$500</text>
+                      </view>
+                </view>
+          </view>
+        </view>
+
+        <view class='goods-box' bindtap='toDetailsTap'>
+            <view class='imgbox'>
+              <image src='/images/index/goods_5.jpeg'></image>
+            </view>
+            <view class='goodsBox-title'>商品名称[500ml]</view>
+            <view class='goods-bottom'>
+                <view class='price-box'>
+                      <view class='etime-goods-price'>
+                      藤友价：
+                      <text>$400+</text>
+                      <text>E5000</text>
+                      </view>
+                      <view class='normal-goods-price'>
+                      实际价格：
+                      <text>$500</text>
+                      </view>
+                </view>
+          </view>
+        </view>
+
+        <view class='goods-box' bindtap='toDetailsTap'>
+            <view class='imgbox'>
+              <image src='/images/index/goods-1.jpeg'></image>
+            </view>
+            <view class='goodsBox-title'>商品名称[500ml]</view>
+            <view class='goods-bottom'>
+                <view class='price-box'>
+                      <view class='etime-goods-price'>
+                      藤友价：
+                      <text>$400+</text>
+                      <text>E5000</text>
+                      </view>
+                      <view class='normal-goods-price'>
+                      实际价格：
+                      <text>$500</text>
+                      </view>
+                </view>
+          </view>
+        </view>
+
+         <view class='goods-box' bindtap='toDetailsTap'>
+            <view class='imgbox'>
+              <image src='/images/index/goods-6.jpeg'></image>
+            </view>
+            <view class='goodsBox-title'>商品名称[500ml]</view>
+            <view class='goods-bottom'>
+                <view class='price-box'>
+                      <view class='etime-goods-price'>
+                      藤友价：
+                      <text>$400+</text>
+                      <text>E5000</text>
+                      </view>
+                      <view class='normal-goods-price'>
+                      实际价格：
+                      <text>$500</text>
+                      </view>
+                </view>
+          </view>
+        </view>
+
+         <view class='goods-box' bindtap='toDetailsTap'>
+            <view class='imgbox'>
+              <image src='/images/index/goods-2.jpeg'></image>
+            </view>
+            <view class='goodsBox-title'>商品名称[500ml]</view>
+            <view class='goods-bottom'>
+                <view class='price-box'>
+                      <view class='etime-goods-price'>
+                      藤友价：
+                      <text>$400+</text>
+                      <text>E5000</text>
+                      </view>
+                      <view class='normal-goods-price'>
+                      实际价格：
+                      <text>$500</text>
+                      </view>
+                </view>
+          </view>
+        </view>
+
+         <view class='goods-box' bindtap='toDetailsTap'>
+            <view class='imgbox'>
+              <image src='/images/index/good-4.jpeg'></image>
+            </view>
+            <view class='goodsBox-title'>商品名称[500ml]</view>
+            <view class='goods-bottom'>
+                <view class='price-box'>
+                      <view class='etime-goods-price'>
+                      藤友价：
+                      <text>$400+</text>
+                      <text>E5000</text>
+                      </view>
+                      <view class='normal-goods-price'>
+                      实际价格：
+                      <text>$500</text>
+                      </view>
+                </view>
+          </view>
+        </view>
+
+
+
+    </view>
+    <view class='no-more-goods'hidden='{{loadingMoreHididen?true:false}}'>没有啦！！</view>
+</view>    

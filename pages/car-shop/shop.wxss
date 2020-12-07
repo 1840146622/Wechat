@@ -1,1 +1,28 @@
 /* pages/car-shop/shop.wxss */
+page{
+  min-height: 100%;
+  background-color: #f2f2f2;
+}
+.container{
+  justify-content: inherit;
+}
+.title-box{
+  width: 100%;
+  padding-top: 330rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #999;
+  background:url(https://cdn.it120.cc/images/weappshop/icon-cart.png) no-repeat center 205rpx;
+  background-size: 100rpx auto;
+  margin-bottom: 50rpx;
+}
+.to-index-btn{
+  color: #fff;
+  background: #e64346;
+  border-radius: 12rpx;
+  width: 300rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  font-size: 28rpx;
+}

@@ -7,12 +7,30 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    indicatorDots:true,
+    autoplay:true,
+    interval:5000,
+    duration:1000,
+    circular:true,
+    imgUrls: ["/images/index/bannner1.jpg", "/images/index/banner2.jpg", "/images/index/bannner3.jpeg"]  
   },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+  //跳转商品搜索界面
+  toSearch:function(e){
+    wx.navigateTo({
+      url:'/pages/search/search',
+    })
+  },
+  //跳转商品详情界面
+  toDetailsTap: function (e){
+    wx.navigateTo({
+      url: '/pages/details/details',
     })
   },
   onLoad: function () {

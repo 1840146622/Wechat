@@ -1,2 +1,10 @@
 <!--pages/car-shop/shop.wxml-->
-<text>pages/car-shop/shop.wxml</text>
+<view class='container'>
+<!--<template is="{{goodsList.list.length >0?'cart-goods-list':'no-goods'}}" data="{{...goodslist}}"></template>-->
+<view class="title-box"> 
+购物车空空如也！
+</view>
+<view class="to-index-btn" bindtap="toIndexPage">
+去逛逛！
+</view>
+</view>

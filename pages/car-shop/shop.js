@@ -7,7 +7,11 @@ Page({
   data: {
 
   },
-
+toIndexPage:function(){
+  wx.switchTab({
+    url: '/pages/sorts/sorts',
+  })
+},
   /**
    * 生命周期函数--监听页面加载
    */

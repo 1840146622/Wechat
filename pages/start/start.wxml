@@ -7,15 +7,25 @@
 </view>
 <!--加载结束-->
 <block wx:else>
-  <image class='logo' src='l/images/logo.png'></image>
+  <image class='logo' src='/images/logo.png'></image>
 </block>
 <!--内容-->
   <view class='content'>
       <view class='mid-box'>
         <view class='avatar'>
-          <open-data type='userAvatarUr1'></open-data>
+          <open-data type='userAvatarUrl'></open-data>
         </view>
+         <image class='wave' src='/images/start/wave.png' mode='aspecFill'></image>
+         <image class='wave wave-bg' src='/images/start/wave.png' mode='aspecFill'></image>
       </view>
+        <view class='bottom-box'>
+          <image class='ader' src='/images/start/adver.jpg'></image>
+        <!--按钮-->
+          <button class='btn-shop' open-type='getUserInfo' bindgetuserinfo='getUserInfo'>
+              <text>进入便利店</text>
+          </button>
+          <text class='copyright'>Powered by 成都易藤创新智能科技有限公司</text>
+        </view>
   </view>
 </view>
 
