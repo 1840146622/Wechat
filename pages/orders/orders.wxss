@@ -1,0 +1,83 @@
+/* pages/orders/orders.wxss */
+.goods-box{
+  width: 800rpx;
+  height: 498rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+  margin: 0rpx 4rpx 6rpx 4rpx;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 16rpx;
+}
+.imgbox{
+  width: 348rpx;
+  height: 348rpx;
+  overflow: hidden;
+  }
+  /*空格 表示选择 imgbox 里面的image*/
+  .imgbox image{
+    width: 300rpx;
+    height: 300rpx;
+    padding: 24rpx;
+  }
+  .goodsBox-title{
+    width: 346rpx;
+    height: 30rpx;
+    /*文字超出部分显示为...*/
+    text-overflow: ellipsis;
+    /*禁止换行*/
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 24rpx;
+    line-height: 30rpx;
+    color: #000;
+    text-align: center;
+  }
+  .goods-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+
+  }
+  .price-box{
+    width: 348rpx;
+    height: auto;
+  }
+.jia{
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 50%;
+  background-color: #f6fa22;
+  margin-left: 610rpx;
+  margin-bottom: 40rpx;
+  
+}
+ .jian{
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 50%;
+  background-color: #f6fa22;
+  margin-left: 500rpx;
+  margin-bottom: 40rpx;
+}
+  .money-box{
+    position: fixed;
+    left: 0;
+    top: 1084rpx;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100rpx;
+    background-color: #00aa99;
+    display: flex;
+    flex-direction: column;
+  }
+  .money{
+    position: relative;
+    font-size: 48rpx;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    margin-top: 20rpx;
+  }
+  

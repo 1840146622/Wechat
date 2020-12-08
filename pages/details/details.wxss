@@ -1,0 +1,8 @@
+/* pages/details/details.wxss */
+page{
+  height:100%;
+}
+.detail image{
+  height: 1000rpx;
+  width: 100%;
+}

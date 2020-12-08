@@ -1,0 +1,93 @@
+<!--pages/orders/orders.wxml-->
+
+ <view class='goods-box' bindtap='toDetailsTap'>
+            <view class='imgbox'>
+              <image src='/images/index/goods_5.jpeg'></image>
+            </view>
+         <view class='goodsBox-title'>温碧泉[500ml]</view>
+           <view class='goods-bottom'>
+                <view class='price-box'>
+                     
+                      <view class='normal-goods-price'>
+                      实际价格：
+                      <text>$500</text>
+                       <view  class='jia'>         
+                         <text class='jj'>+</text>  
+                          <view>         
+                         <text>-</text>                  
+                      </view>                   
+                      </view>     
+                        
+                      </view>                           
+                </view>
+          </view>
+        </view>
+
+         <view class='goods-box' bindtap='toDetailsTap'>
+            <view class='imgbox'>
+              <image src='/images/index/good-4.jpeg'></image>
+            </view>
+            <view class='goodsBox-title'>被子</view>
+            <view class='goods-bottom'>
+                <view class='price-box'>
+                     
+                      <view class='normal-goods-price'>
+                      实际价格：
+                      <text>$500</text>
+                      </view>
+                </view>
+          </view>
+        </view>
+
+         <view class='goods-box' bindtap='toDetailsTap'>
+            <view class='imgbox'>
+              <image src='/images/index/goods-6.jpeg'></image>
+            </view>
+            <view class='goodsBox-title'>天马星空[500ml]</view>
+            <view class='goods-bottom'>
+                <view class='price-box'>
+                      <view class='normal-goods-price'>
+                      实际价格：
+                      <text>$500</text>
+                      </view>
+                </view>
+          </view>
+        </view>
+
+         <view class='goods-box' bindtap='toDetailsTap'>
+            <view class='imgbox'>
+              <image src='/images/index/goods-1.jpeg'></image>
+            </view>
+            <view class='goodsBox-title'>洗发水[500ml]</view>
+            <view class='goods-bottom'>
+                <view class='price-box'>
+                      
+                      <view class='normal-goods-price'>
+                      实际价格：
+                      <text>$500</text>
+                      </view>
+                </view>
+          </view>
+        </view>
+
+         <view class='goods-box' bindtap='toDetailsTap'>
+            <view class='imgbox'>
+              <image src='/images/index/goods1.jpg'></image>
+            </view>
+          <view class='goodsBox-title'>可口可乐[500ml]</view>
+            <view class='goods-bottom'>
+                <view class='price-box'>
+                      <view class='normal-goods-price'>
+                      实际价格：
+                      <text>$500</text>
+                      </view>
+                </view>
+          </view>
+        </view>
+        <view class='money-box'>
+            <text class='money'>总计：0</text>
+        </view>
+
+
+ 
+        

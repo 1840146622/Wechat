@@ -1,0 +1,4 @@
+<!--pages/details/details.wxml-->
+<view class='detail'>
+    <image src='/images/mine/ditails-1.jpg'></image>
+</view>
