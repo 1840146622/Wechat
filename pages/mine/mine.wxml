@@ -9,7 +9,7 @@
                <text>{{userInfo.nickName}}</text>
                <view class='accont-type off'>未绑定</view>
             </view>
-            <view class='accont'>用户账号：34******66@qq.com</view>
+            <view class='accont'>用户账号：18******21@qq.com</view>
         </view>
     </view>
     <view class='mine-content'>
